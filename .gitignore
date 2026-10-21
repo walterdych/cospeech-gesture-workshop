@@ -1,0 +1,14 @@
+!*/: Annotations/EST_VIDEO_gestures_found_elan_apexes.csv
+!*/: **/TEST_VIDEO*
+*/Testing
+
+*.csv
+*.log
+*.txt
+*.json
+*.xml
+*.yaml
+*.yml
+*.html
+*.htm
+*.pdf
