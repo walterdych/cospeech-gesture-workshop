@@ -1,0 +1,15 @@
+# conda / Miniforge environment for the workshop (see README.md).
+# Create it once with:   conda env create -f environment.yml
+# Then, every time:      conda activate gesture-workshop
+#                        jupyter lab
+#
+# The package versions live in requirements.txt (the same versions uv uses).
+name: gesture-workshop
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt

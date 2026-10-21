@@ -1,0 +1,27 @@
+# Everything this workshop needs to run, used by uv (see README.md).
+# After changing this list, run `uv lock` and then
+# `uv export --no-hashes --no-dev --no-annotate -o requirements.txt` so conda/pip users
+# get exactly the same versions.
+
+[project]
+name = "cospeech-gesture-workshop"
+version = "2.0.0"
+description = "Automatic co-speech gesture annotation from video with MediaPipe"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    # Body tracking. There is no MediaPipe for Intel Macs, so it is skipped there
+    # (notebooks 2-5 still work, using the example keypoints file).
+    "mediapipe>=1.1.1,<2; sys_platform != 'darwin' or platform_machine == 'arm64'",
+    "pandas>=3.0",
+    "scipy>=1.15",
+    "plotly>=6.0",
+    "pympi-ling>=1.70",  # reads and writes ELAN (.eaf) files
+    "tqdm>=4.66",        # progress bars
+    "ipywidgets>=8.1",   # lets progress bars draw nicely in Jupyter
+    "jupyterlab>=4.2",
+]
+
+[tool.uv]
+package = false

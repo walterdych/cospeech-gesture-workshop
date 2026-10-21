@@ -1,14 +1,23 @@
-!*/: Annotations/EST_VIDEO_gestures_found_elan_apexes.csv
-!*/: **/TEST_VIDEO*
-*/Testing
+# Python environments and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
 
+# Results made by running the notebooks (everyone makes their own)
 *.csv
+*_backup.eaf
+*.bak
+# ...except the example tracking data, so Notebooks 2-5 work even without MediaPipe
+!Keypoints/Test_Video_keypoints.csv
+
+# Extra tracking models that Notebook 1 downloads (the "full" model is included)
+*.task
+!Notebook/pose_landmarker_full.task
+
+*/Testing
 *.log
-*.txt
 *.json
 *.xml
-*.yaml
-*.yml
 *.html
 *.htm
 *.pdf
