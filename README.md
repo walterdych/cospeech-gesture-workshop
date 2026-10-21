@@ -304,3 +304,12 @@ Extra notebooks for bigger projects. Like the main notebooks, each one explains 
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Credits
+
+This workshop builds on MultiGest, developed collaboratively by Karee Garvin, Walter Dych, and Kathryn Franich. Garvin
+developed the methodological architecture for processing kinematic data and identifying gesture landmarks; Dych
+implemented the software; and Franich provided the research data and project funding. This repository presents
+Dych’s subsequent workshop adaptation of that work. Related methodological work is described in
+[Dych, Garvin & Franich (2023)](https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2023/full_papers/635.pdf)
+and [Dych, Garvin & Franich (2024, conference abstract)](https://labphon.org/sites/default/files/labphon19/Papers/corpusphon/dych%20et%20al.pdf).
